@@ -1,166 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SS Racing Academy | Professional Car Racing Training</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sankhla Racing Academy | Off-Road Training</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #0e0e0e;
-            color: #ffffff;
-            line-height: 1.6;
-        }
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ffffff;
+        background-color: #000;
+    }
 
-        header {
-            background: linear-gradient(to right, #000000, #1a1a1a);
-            padding: 80px 20px;
-            text-align: center;
-        }
+    /* MAIN BACKGROUND SECTION */
+    .hero {
+        background-image:
+            linear-gradient(
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.80)
+            ),
+            url("background.jpg"); /* <-- YOUR IMAGE */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 60px 20px;
+        min-height: 100vh;
+    }
 
-        header h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-            color: #ff3c00;
-        }
+    .container {
+        max-width: 1100px;
+        margin: auto;
+    }
 
-        header p {
-            font-size: 20px;
-            max-width: 700px;
-            margin: auto;
-        }
+    h1 {
+        text-align: center;
+        font-size: 42px;
+        margin-bottom: 30px;
+    }
 
-        .btn {
-            display: inline-block;
-            margin: 20px 10px 0;
-            padding: 12px 30px;
-            background-color: #ff3c00;
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 4px;
-        }
+    h2 {
+        font-size: 28px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        color: #ffd700;
+    }
 
-        .section {
-            padding: 60px 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
+    h3 {
+        margin-top: 25px;
+        color: #ffffff;
+    }
 
-        .section h2 {
-            color: #ff3c00;
-            margin-bottom: 20px;
+    p, li {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    /* IMAGE STRIP */
+    .image-strip {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 10px;
+        margin: 20px 0 40px;
+    }
+
+    .image-strip img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 4px;
+        border: 1px solid #555;
+    }
+
+    /* FOOTER */
+    footer {
+        background: rgba(0, 0, 0, 0.85);
+        padding: 20px;
+        text-align: center;
+        border-top: 1px solid #444;
+        font-size: 14px;
+    }
+
+    footer span {
+        color: #ffd700;
+    }
+
+    @media (max-width: 768px) {
+        h1 {
             font-size: 32px;
         }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+        h2 {
+            font-size: 24px;
         }
-
-        .card {
-            background-color: #1c1c1c;
-            padding: 25px;
-            border-radius: 6px;
-        }
-
-        footer {
-            background-color: #000;
-            padding: 30px;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        footer a {
-            color: #ff3c00;
-            text-decoration: none;
-        }
-    </style>
+    }
+</style>
 </head>
 
 <body>
 
-<!-- HERO SECTION -->
-<header>
-    <h1>SS Racing Academy</h1>
-    <p>Train Like a Racer. Drive Like a Pro.<br>
-       Professional car racing training by Sanjiv Sankhla</p>
+<section class="hero">
+    <div class="container">
 
-    <a href="#programs" class="btn">View Programs</a>
-    <a href="#contact" class="btn">Enroll Now</a>
-</header>
+        <h1>Sankhla Racing Academy</h1>
 
-<!-- ABOUT -->
-<section class="section">
-    <h2>About Us</h2>
-    <p>
-        SS Racing Academy is a professional motorsport training platform founded by
-        <strong>Sanjiv Sankhla</strong>. We specialize in structured racing education,
-        real track experience, and performance-based coaching for drivers of all levels.
-    </p>
-</section>
-
-<!-- COACH -->
-<section class="section">
-    <h2>Meet the Coach</h2>
-    <p>
-        <strong>Sanjiv Sankhla</strong> brings a disciplined, safety-focused and
-        performance-driven approach to racing training, helping drivers build confidence,
-        control, and consistency on track.
-    </p>
-</section>
-
-<!-- PROGRAMS -->
-<section class="section" id="programs">
-    <h2>Training Programs</h2>
-
-    <div class="cards">
-        <div class="card">
-            <h3>Beginner Racing</h3>
-            <p>Perfect for first-time racers and track-day enthusiasts. Learn racing basics,
-               safety, braking, and steering control.</p>
+        <!-- IMAGE GALLERY -->
+        <div class="image-strip">
+            <img src="img1.jpg">
+            <img src="img2.jpg">
+            <img src="img3.jpg">
+            <img src="img4.jpg">
+            <img src="img5.jpg">
+            <img src="img6.jpg">
         </div>
 
-        <div class="card">
-            <h3>Intermediate Performance</h3>
-            <p>Advanced racing lines, cornering techniques, consistency and lap-time improvement.</p>
-        </div>
+        <h2>Key Features & Highlights</h2>
 
-        <div class="card">
-            <h3>Advanced Coaching</h3>
-            <p>One-to-one professional coaching, race preparation, and performance analysis.</p>
-        </div>
+        <h3>Professional Training</h3>
+        <ul>
+            <li>Car race professional training by certified experts</li>
+            <li>Beginner to Advanced level courses</li>
+        </ul>
+
+        <h3>The Track</h3>
+        <ul>
+            <li>Specialized off-road car training track</li>
+            <li>Multiple obstacles and technical challenges</li>
+            <li>Designed for safety and real-world racing experience</li>
+        </ul>
+
+        <h3>The Experience</h3>
+        <ul>
+            <li>Test your skills and speed on an off-road track</li>
+            <li>Experience the real thrill of off-roading</li>
+            <li>Ideal for racing enthusiasts and professionals</li>
+        </ul>
+
+        <h3>Eligibility & Compatibility</h3>
+        <ul>
+            <li>Open for both Men and Women</li>
+            <li>Suitable for SUVs and Sedan cars</li>
+        </ul>
+
     </div>
 </section>
 
-<!-- WHY US -->
-<section class="section">
-    <h2>Why Choose SS Racing Academy?</h2>
-    <ul>
-        <li>✔ Professional track-based training</li>
-        <li>✔ Safety-first coaching approach</li>
-        <li>✔ Personalized driver feedback</li>
-        <li>✔ Suitable for all skill levels</li>
-    </ul>
-</section>
-
-<!-- CONTACT -->
-<section class="section" id="contact">
-    <h2>Contact Us</h2>
-    <p>
-        📧 Email: info@ssracingacademy.com<br>
-        📞 Phone: +91-XXXXXXXXXX<br>
-        📍 Location: India
-    </p>
-</section>
-
-<!-- FOOTER -->
 <footer>
-    <p>© 2026 SS Racing Academy | All Rights Reserved</p>
-    <p>Follow us on <a href="#">Instagram</a> | <a href="#">YouTube</a></p>
+    Sankhla Racing Academy, Jaipur |
+    Email: <span>sanjivsankhla@gmail.com</span> |
+    Mobile: <span>7737563567</span>
 </footer>
 
 </body>
